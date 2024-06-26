@@ -1,0 +1,171 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for content readability */
+    color: #333; /* Default text color */
+}
+
+/* Header Section */
+header {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #008000; /* Green background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ff0000; /* Red on hover */
+    color: #000000; /* Black text on hover */
+}
+
+/* Content Container */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Centered container with max width */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/hero-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    font-family: 'Martel', serif; /* Martin font for headings */
+    color: #008000; /* Green for headings */
+    border-bottom: 2px solid #ff0000; /* Red underline for headings */
+    padding-bottom: 10px;
+}
+
+.section p,
+.section ul {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for images */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure the footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Links */
+a {
+    color: #008000; /* Green links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .hero {
+        height: 200px;
+    }
+    
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Contact form Styling */
+/* Style inputs with type="text", select elements and textareas */
+#contact {
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+}
